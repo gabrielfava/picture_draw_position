@@ -35,6 +35,8 @@
             this.pcBox = new System.Windows.Forms.PictureBox();
             this.pcBoxOverView = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listImages = new System.Windows.Forms.ListBox();
+            this.btOpenFolder = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackZoom)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcBox)).BeginInit();
@@ -53,7 +55,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(696, 453);
+            this.button1.Location = new System.Drawing.Point(696, 366);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(322, 52);
             this.button1.TabIndex = 2;
@@ -94,16 +96,38 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 577);
+            this.textBox1.Location = new System.Drawing.Point(743, 340);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            // 
+            // listImages
+            // 
+            this.listImages.FormattingEnabled = true;
+            this.listImages.Location = new System.Drawing.Point(12, 525);
+            this.listImages.Name = "listImages";
+            this.listImages.Size = new System.Drawing.Size(669, 186);
+            this.listImages.TabIndex = 6;
+            this.listImages.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listImages_MouseClick);
+            this.listImages.SelectedIndexChanged += new System.EventHandler(this.listImages_SelectedIndexChanged);
+            // 
+            // btOpenFolder
+            // 
+            this.btOpenFolder.Location = new System.Drawing.Point(696, 439);
+            this.btOpenFolder.Name = "btOpenFolder";
+            this.btOpenFolder.Size = new System.Drawing.Size(322, 44);
+            this.btOpenFolder.TabIndex = 7;
+            this.btOpenFolder.Text = "button2";
+            this.btOpenFolder.UseVisualStyleBackColor = true;
+            this.btOpenFolder.Click += new System.EventHandler(this.btOpenFolder_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 723);
+            this.Controls.Add(this.btOpenFolder);
+            this.Controls.Add(this.listImages);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pcBoxOverView);
             this.Controls.Add(this.trackZoom);
@@ -129,6 +153,8 @@
         private System.Windows.Forms.PictureBox pcBox;
         private System.Windows.Forms.PictureBox pcBoxOverView;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox listImages;
+        private System.Windows.Forms.Button btOpenFolder;
     }
 }
 

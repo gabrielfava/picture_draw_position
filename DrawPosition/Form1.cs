@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,6 +57,49 @@ namespace DrawPosition
             int xCoordinate = Cursor.Position.X;
             int yCoordinate = Cursor.Position.Y;
             textBox1.Text = String.Format("{0}  -   {1}", e.X, e.Y);
+        }
+
+        private void btOpenFolder_Click(object sender, EventArgs e)
+        {
+
+
+
+            using (var fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    DirectoryInfo d = new DirectoryInfo(fbd.SelectedPath);//Assuming Test is your Folder
+                    FileInfo[] Files = d.GetFiles(); //Getting Text files
+     
+                    foreach (FileInfo file in Files)
+                    {
+                        if (file.Extension.ToUpper() == ".JPG" || file.Extension.ToUpper() == ".TIF")
+                            listImages.Items.Add(file.FullName);
+                       
+                    }
+                }
+            }
+
+
+        }
+
+        private void listImages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string text = listImages.GetItemText(listImages.SelectedItem);
+
+            openImage(text);
+         
+                
+
+
+           
+        }
+
+        private void listImages_MouseClick(object sender, MouseEventArgs e)
+        {
+           
         }
 
 
