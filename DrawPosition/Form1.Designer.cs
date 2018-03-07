@@ -37,6 +37,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listImages = new System.Windows.Forms.ListBox();
             this.btOpenFolder = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackZoom)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcBox)).BeginInit();
@@ -83,6 +84,8 @@
             this.pcBox.TabIndex = 1;
             this.pcBox.TabStop = false;
             this.pcBox.Click += new System.EventHandler(this.pcBox_Click);
+            this.pcBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pcBox_MouseDown);
+            this.pcBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pcBox_MouseMove);
             this.pcBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pcBox_MouseUp);
             // 
             // pcBoxOverView
@@ -121,11 +124,20 @@
             this.btOpenFolder.UseVisualStyleBackColor = true;
             this.btOpenFolder.Click += new System.EventHandler(this.btOpenFolder_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(899, 327);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 8;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 723);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.btOpenFolder);
             this.Controls.Add(this.listImages);
             this.Controls.Add(this.textBox1);
@@ -155,6 +167,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listImages;
         private System.Windows.Forms.Button btOpenFolder;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

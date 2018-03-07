@@ -7,3 +7,12 @@ C:\Users\Gabriel Fava\Desktop\GIT\picture_draw_position\DrawPosition\obj\Debug\D
 C:\Users\Gabriel Fava\Desktop\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.csproj.GenerateResource.Cache
 C:\Users\Gabriel Fava\Desktop\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.exe
 C:\Users\Gabriel Fava\Desktop\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.pdb
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\bin\Debug\DrawPosition.exe.config
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.exe
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.pdb
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\bin\Debug\DrawPosition.exe
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\bin\Debug\DrawPosition.pdb
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.csprojResolveAssemblyReference.cache
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.Form1.resources
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.Properties.Resources.resources
+E:\Gabriel\GIT\picture_draw_position\DrawPosition\obj\Debug\DrawPosition.csproj.GenerateResource.Cache
